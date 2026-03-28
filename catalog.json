@@ -1,0 +1,248 @@
+{
+  "version": 2,
+  "theorems": [
+    {
+      "id": "pythagoras",
+      "name": "Pisagor Teoremi",
+      "category": "geo",
+      "description": "Dik üçgenlerde kenarlar arasındaki ilişki",
+      "statement": "a² + b² = c²",
+      "difficulty": 1,
+      "tags": ["dik üçgen", "alan", "hipotenüs", "kare"],
+      "proofs": [
+        {
+          "name": "Geometrik İspat (Alan)",
+          "description": "Dört üçgen + kare düzenlemesi — en sezgisel yol",
+          "url": "asset://proofs/pythagoras.html"
+        },
+        {
+          "name": "Öklid'in Orijinal İspatı",
+          "description": "Elementler Kitap I, Önerme 47 — benzer üçgenler",
+          "url": "https://cdn.jsdelivr.net/gh/YOUR_USER/proof-explorer-content@main/proofs/pythagoras_euclid.html"
+        },
+        {
+          "name": "Cebrik İspat (Trigonometrik)",
+          "description": "sin²θ + cos²θ = 1 özdeşliğinden türetme",
+          "url": "https://cdn.jsdelivr.net/gh/YOUR_USER/proof-explorer-content@main/proofs/pythagoras_trig.html"
+        }
+      ]
+    },
+    {
+      "id": "euclid_primes",
+      "name": "Sonsuz Asal Sayı",
+      "category": "num",
+      "description": "Asal sayılar sonsuzdur",
+      "statement": "|{p : p asal}| = ∞",
+      "difficulty": 1,
+      "tags": ["asal", "sonsuz", "çelişki"],
+      "proofs": [
+        {
+          "name": "Öklid'in Klasik İspatı",
+          "description": "Çelişki — N = p₁·p₂···pₙ + 1",
+          "url": "asset://proofs/euclid_primes.html"
+        },
+        {
+          "name": "Euler'in Analitik İspatı",
+          "description": "Σ 1/p ıraksar — ürün formülü yöntemi",
+          "url": "https://cdn.jsdelivr.net/gh/YOUR_USER/proof-explorer-content@main/proofs/euclid_primes_euler.html"
+        }
+      ]
+    },
+    {
+      "id": "sqrt2_irrational",
+      "name": "√2 İrrasyonelliği",
+      "category": "num",
+      "description": "√2 kesirle yazılamaz",
+      "statement": "√2 ∉ ℚ",
+      "difficulty": 1,
+      "tags": ["irrasyonel", "çelişki", "çift-tek"],
+      "proofs": [
+        {
+          "name": "Çift-Tek Parite İspatı",
+          "description": "gcd(p,q)=1 çelişkisi — klasik yöntem",
+          "url": "asset://proofs/sqrt2_irrational.html"
+        },
+        {
+          "name": "Geometrik İspat",
+          "description": "Sonsuz küçülme (infinite descent) ile alan argümanı",
+          "url": "https://cdn.jsdelivr.net/gh/YOUR_USER/proof-explorer-content@main/proofs/sqrt2_geometric.html"
+        },
+        {
+          "name": "Benzersiz Çarpanlara Ayırma ile",
+          "description": "Aritmetiğin Temel Teoremi'nden türetme",
+          "url": "https://cdn.jsdelivr.net/gh/YOUR_USER/proof-explorer-content@main/proofs/sqrt2_fta.html"
+        }
+      ]
+    },
+    {
+      "id": "quadratic_formula",
+      "name": "Karesel Formül",
+      "category": "alg",
+      "description": "İkinci derece denklemin genel çözümü",
+      "statement": "x = (−b ± √(b²−4ac)) / 2a",
+      "difficulty": 1,
+      "tags": ["polinom", "kök", "diskriminant"],
+      "proofs": [
+        {
+          "name": "Kareyi Tamamlama",
+          "description": "Standart cebirsel türetme + diskriminant görselleştirici",
+          "url": "asset://proofs/quadratic_formula.html"
+        }
+      ]
+    },
+    {
+      "id": "fundamental_arithmetic",
+      "name": "Aritmetiğin Temel Teoremi",
+      "category": "num",
+      "description": "Her tam sayı asal çarpanlara tek türlü ayrışır",
+      "statement": "∀n>1: n = p₁^a₁ · … · pₖ^aₖ (tek türlü)",
+      "difficulty": 2,
+      "tags": ["asal", "çarpanlara ayırma", "teklik"],
+      "proofs": [
+        {
+          "name": "Tümevarım + Euclid Lemması",
+          "description": "Var oluş ve teklik ayrı ayrı ispatlanır",
+          "url": "asset://proofs/fundamental_arithmetic.html"
+        }
+      ]
+    },
+    {
+      "id": "fermat_little",
+      "name": "Fermat'ın Küçük Teoremi",
+      "category": "num",
+      "description": "Asal sayılar modüler aritmetikte",
+      "statement": "aᵖ⁻¹ ≡ 1 (mod p)",
+      "difficulty": 2,
+      "tags": ["modüler", "asal", "grup"],
+      "proofs": [
+        {
+          "name": "Permütasyon İspatı",
+          "description": "{a, 2a, …, (p-1)a} kümesi argümanı",
+          "url": "asset://proofs/fermat_little.html"
+        },
+        {
+          "name": "Grup Teorisi ile",
+          "description": "(ℤ/pℤ)* grubunun mertebesi p-1",
+          "url": "https://cdn.jsdelivr.net/gh/YOUR_USER/proof-explorer-content@main/proofs/fermat_group.html"
+        }
+      ]
+    },
+    {
+      "id": "mvt",
+      "name": "Ortalama Değer Teoremi",
+      "category": "cal",
+      "description": "Türevin kiriş eğimine eşit olduğu nokta",
+      "statement": "∃c∈(a,b): f'(c) = (f(b)−f(a))/(b−a)",
+      "difficulty": 2,
+      "tags": ["türev", "süreklilik", "Rolle"],
+      "proofs": [
+        {
+          "name": "Rolle Teoremi ile İndirgeme",
+          "description": "g(x) yardımcı fonksiyonu kullanılır",
+          "url": "asset://proofs/mvt.html"
+        }
+      ]
+    },
+    {
+      "id": "pigeonhole",
+      "name": "Güvercin Yuvası İlkesi",
+      "category": "kom",
+      "description": "n+1 nesne n kutuya sığmaz",
+      "statement": "n+1 nesne, n kutu ⟹ ∃ kutu: |kutu|≥2",
+      "difficulty": 1,
+      "tags": ["sayma", "kombinatorik", "çelişki"],
+      "proofs": [
+        {
+          "name": "Doğrudan Çelişki",
+          "description": "Her kutuda ≤1 varsayımı çürütülür",
+          "url": "asset://proofs/pigeonhole.html"
+        }
+      ]
+    },
+    {
+      "id": "cauchy_schwarz",
+      "name": "Cauchy–Schwarz Eşitsizliği",
+      "category": "cal",
+      "description": "İç çarpım uzayında temel eşitsizlik",
+      "statement": "|⟨u,v⟩| ≤ ‖u‖·‖v‖",
+      "difficulty": 2,
+      "tags": ["eşitsizlik", "norm", "iç çarpım"],
+      "proofs": [
+        {
+          "name": "Diskriminant İspatı",
+          "description": "‖u−tv‖² ≥ 0 polinomu — en kısa yol",
+          "url": "asset://proofs/cauchy_schwarz.html"
+        },
+        {
+          "name": "Lagrange Özdeşliği ile",
+          "description": "Açılım eşitliğinden doğrudan türetme",
+          "url": "https://cdn.jsdelivr.net/gh/YOUR_USER/proof-explorer-content@main/proofs/cauchy_lagrange.html"
+        }
+      ]
+    },
+    {
+      "id": "spectral",
+      "name": "Spektral Teorem",
+      "category": "lin",
+      "description": "Simetrik matrisler köşegenleştirilebilir",
+      "statement": "A=Aᵀ ⟹ A = QΛQᵀ",
+      "difficulty": 3,
+      "tags": ["öz değer", "matris", "ortonormal"],
+      "proofs": [
+        {
+          "name": "İç Çarpım İspatı",
+          "description": "⟨Av,v⟩ gerçelliği + ortonormallik argümanı",
+          "url": "asset://proofs/spectral.html"
+        }
+      ]
+    },
+    {
+      "id": "rank_nullity",
+      "name": "Rank-Nullity Teoremi",
+      "category": "lin",
+      "description": "Lineer dönüşümlerde boyut ilişkisi",
+      "statement": "dim V = rank(T) + nullity(T)",
+      "difficulty": 2,
+      "tags": ["boyut", "çekirdek", "görüntü"],
+      "proofs": [
+        {
+          "name": "Baz Tamamlama İspatı",
+          "description": "Ker(T) bazını V bazına genişletme",
+          "url": "asset://proofs/rank_nullity.html"
+        }
+      ]
+    },
+    {
+      "id": "thales",
+      "name": "Thales Teoremi",
+      "category": "geo",
+      "description": "Çap üzerine yazılan çevre açısı",
+      "statement": "Çap üzerine yazılan çevre açısı 90°'dir",
+      "difficulty": 1,
+      "tags": ["çember", "açı", "çap"],
+      "proofs": [
+        {
+          "name": "İkizkenar Üçgen İspatı",
+          "description": "OA=OB=OC yarıçap eşitliğinden açı hesabı",
+          "url": "asset://proofs/thales.html"
+        }
+      ]
+    },
+    {
+      "id": "euler_polyhedra",
+      "name": "Euler'in Çokyüzlü Formülü",
+      "category": "geo",
+      "description": "Köşe, kenar ve yüz arasındaki derin ilişki",
+      "statement": "V − E + F = 2",
+      "difficulty": 2,
+      "tags": ["topoloji", "çokyüzlü", "graflar"],
+      "proofs": [
+        {
+          "name": "Yayılan Ağaç İspatı",
+          "description": "Düzleme yayma + spanning tree argümanı",
+          "url": "asset://proofs/euler_polyhedra.html"
+        }
+      ]
+    }
+  ]
+}
